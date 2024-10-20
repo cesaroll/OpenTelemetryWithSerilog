@@ -1,0 +1,10 @@
+services:
+
+  # SEQ Log Server
+  seq:
+    image: datalust/seq:latest
+    restart: always
+    ports:
+      - 5341:80
+    environment:
+      - ACCEPT_EULA=Y
